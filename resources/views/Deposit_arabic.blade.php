@@ -59,7 +59,7 @@
   
 
     <h2 class="mt-5">نموذج الإيداع</h2>
-    <form id="registrationForm" enctype="multipart/form-data"  action="{{ route('/form') }}"  method="post">
+    <form id="registrationForm" enctype="multipart/form-data"  action="{{ route('/form') }}"  method="post"  enctype="multipart/form-data">
       @csrf  
       <label for="name">:أسم الطالب <i class="fa-solid fa-user"></i></label>
         <input type="text" id="name" name="name" pattern="[A-Za-z ]+" placeholder="الاسم" required>

@@ -147,7 +147,7 @@
             @foreach ($submissions as $submission)
             <tr>
                 <td>{{ $row_number++ }}</td> <!-- Increment row number -->
-                <td>{{ $submission->photo }}</td>
+                <td><img src="{{url('depositedItem/'.$submission->photo) }}" style="width: 100px; hight: 100px" alt="Img"></td>
                 <td>{{ $submission->name }}</td>
                 <td>{{ $submission->found }}</td>
                 <td>

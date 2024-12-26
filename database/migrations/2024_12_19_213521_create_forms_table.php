@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('form', function (Blueprint $table) {
             $table->id();
-            $table->text('name');
-            $table->text('faculty');
-            $table->integer('studentId');
-            $table->string('phoneNumber');
+            $table->string('name')->nullable();
+            $table->string('faculty')->nullable();
+            $table->string('studentId')->nullable();
+            $table->string('phoneNumber')->nullable();
             $table->string('depositedItem')->nullable();
             $table->timestamps();
         });

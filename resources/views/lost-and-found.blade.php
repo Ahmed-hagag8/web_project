@@ -52,7 +52,7 @@
 
     <main>
       <section>
-        <form class="form-control my-bg" action="{{ route('/form3') }}" method="POST">
+        <form class="form-control my-bg" action="{{ route('/form3') }}" method="POST"  enctype="multipart/form-data">
           @csrf
         <div class="text-center mt-5 pt-5 ">
           <h1 class=" fw-bold text-center font-main" >Lost item</h1>

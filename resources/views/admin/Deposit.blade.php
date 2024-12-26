@@ -156,7 +156,7 @@
                 <td>{{ $submission->faculty }}</td>
                 <td>{{ $submission->studentId }}</td>
                 <td>{{ $submission->phoneNumber }}</td>
-                <td><img src="{{ url('images/'.$submission->depositedItem) }}" style="width: 100px; hight: 100px"></td>
+                <td><img src="{{url('depositedItem/'.$submission->depositedItem) }}" style="width: 100px; hight: 100px" alt="Img"></td>
                 <td>
                     <!-- Delete form -->
                     <form action="{{ route('submission.destroy', $submission->id) }}" method="POST">

@@ -63,7 +63,7 @@
       <!-- Content -->
 
       <h2 class="mt-5 font-main"><b>Deposit Form</b></h2>
-      <form id="registrationForm" class="mt-4" action="{{ route('/form') }}"  method="post">
+      <form id="registrationForm" class="mt-4" action="{{ route('/form') }}"  method="post"  enctype="multipart/form-data">
         @csrf
         <label for="name"><i class="fa-solid fa-user"></i> Name:</label>
         <input
